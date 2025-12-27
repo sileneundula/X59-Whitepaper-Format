@@ -14,3 +14,27 @@ X59-fmt was developed for the purpose of creating a modular format that can be u
 ## Introduction
 
 The concept of `X59-fmt` came from my development of hybrid keypairs known as ShulginSigning (ED25519/ED448 and SPHINCS+ with hedged signatures). The format was intended for public key certificates but after seeing its usefulness in other scenarioes, it began to be applied to other concepts.
+
+## 2. The Core Concepts
+
+### 2.1 X59Labels
+
+An `X59Label` is defined as the following:
+
+```python
+class X59Label:
+  pieces: [str]
+  attribute: str
+
+```
+
+```rust
+
+pub struct X59Label {
+  pub pieces: Vec<String>,
+  pub attribute: Option<String>,
+}
+
+
+```
+
