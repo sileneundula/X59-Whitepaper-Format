@@ -21,6 +21,20 @@ The concept of `X59-fmt` came from my development of hybrid keypairs known as Sh
 
 An `X59Label` is defined as the following:
 
+1. has atleast one piece of identifying information, forming a path using the path delimiter `/`
+2. has or does not have an attribute, an attribute defined as contextual information using the `X59source`, likely, the `X59STD`. Attributes are defined in braces `[]` with parathesis and an exclamation point `[(!..)example/path/value]`
+
+#### Code Definitions
+
+##### X59Label: Rust
+
+```rust
+pub struct X59Label {
+  pub pieces: Vec<String>,
+  pub attribute: Option<String>,
+}
+```
+##### X59Label: Python
 ```python
 class X59Label:
   pieces: [str]
@@ -28,13 +42,5 @@ class X59Label:
 
 ```
 
-```rust
 
-pub struct X59Label {
-  pub pieces: Vec<String>,
-  pub attribute: Option<String>,
-}
-
-
-```
 
