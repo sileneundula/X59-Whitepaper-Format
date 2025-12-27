@@ -17,7 +17,7 @@ The concept of `X59-fmt` came from my development of hybrid keypairs known as Sh
 
 ## 2. The Core Concepts
 
-### 2.1 X59Labels
+### 2.1 X59Labels | (`[(!..)]` or `[]`)
 
 An `X59Label` is defined as the following:
 
@@ -41,20 +41,28 @@ class X59Label:
   attribute: str
 ```
 
-### 2.2 X59Source
+### 2.2 X59Source | (`@`)
 
 An `X59Source` is defined as the following:
 
 1. contains a `source_identifier` (`SID`)
 2. can contain additional information in regards to how it should be parsed
 
-### 2.3 X59Type
+### 2.3 X59Type | (`#`)
 
 An `X59Type` is defined as the following:
 
 1. Defines the data type(s) being serialized using a modular approach.
 2. Can use Standard Library, or modular approaches for Type System.
 3. Meant to be interoperable (purpose)
+
+### 2.4 X59ConstraintsAndScripting | (`$`)
+
+An `X59Ext` extends on the idea of data formats and makes it so that certain actions can be performed, or even such that certain parsing is performed right and verified.
+
+An `X59Ext` is defined as the following:
+
+1.
 
 
 
