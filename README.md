@@ -39,8 +39,22 @@ pub struct X59Label {
 class X59Label:
   pieces: [str]
   attribute: str
-
 ```
+
+### 2.2 X59Source
+
+An `X59Source` is defined as the following:
+
+1. contains a `source_identifier` (`SID`)
+2. can contain additional information in regards to how it should be parsed
+
+### 2.3 X59Type
+
+An `X59Type` is defined as the following:
+
+1. Defines the data type(s) being serialized using a modular approach.
+2. Can use Standard Library, or modular approaches for Type System.
+3. Meant to be interoperable (purpose)
 
 
 
