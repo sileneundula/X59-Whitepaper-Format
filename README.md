@@ -9,7 +9,7 @@ Developed and Introduced By Joseph Paul Tortorelli.
 
 Data Serialization is the methodology in which we serialize (or store) our data in different format. There are many data serialization techniques, like JSON, YAML, TOML, PICKLE, and others. In this paper, I would like to introduce a new data serialization / modular data storage technique known as the X59 format, or `X59-fmt`. These method is easy to read, requires little knowledge to be used, and can be used in situations where more context is needed to be added to data. As it is modular, it has the ability to abstract different concepts and rely on other libraries for usage. This data serialization/storage method can be used in many scenarioes, quite like MultiAddr/MultiFormats by Protocol Labs. In this technique, we introduce concepts learned from multiformats into real-life situations and how we can standardize interoperability between different hosts.
 
-X59-fmt was developed for the purpose of creating a modular format that can be used to describe data, quite like multiformats. It was developed for use in cryptography but has now been developed for use in other purposes. Due to its extendable nature, it can remain a core component of data serialization.
+`X59-fmt` was developed for the purpose of creating a modular format that can be used to describe data, quite like multiformats. It was developed for use in cryptography but has now been developed for use in other purposes. Due to its extendable nature, it can remain a core component of data serialization.
 
 ## Introduction
 
@@ -62,7 +62,22 @@ An `X59Ext` extends on the idea of data formats and makes it so that certain act
 
 An `X59Ext` is defined as the following:
 
-1.
+1. Using some script/process that is available in the standard library or that is available in registries.
+2. ...
+
+## 3. The Value Format
+
+### 3.1 Values
+
+Values are easily readable and follow certain formats making them easy to read, easy to use, and also powerful with extensions.
+
+For example, the value for ShulginSigning of the public keys uses the format below:
+
+`<ED25519_PK>:<SPHINCS+_PK>`
+
+Which can further be interpreted as:
+
+`[librustysigs/shulginsigning]<ED25519_PK>:<SPHINCS+_PK>`
 
 
 
