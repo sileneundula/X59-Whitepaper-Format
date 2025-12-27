@@ -79,5 +79,9 @@ Which can further be interpreted as:
 
 `[librustysigs/shulginsigning]<ED25519_PK>:<SPHINCS+_PK>`
 
+### 3.2 Value Seperation [`: :: ,`]
+
+Values are seperated by either a colon (`:`), two colons (`::`), or a comma (`,`).
+
 
 
