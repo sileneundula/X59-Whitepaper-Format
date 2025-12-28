@@ -83,5 +83,23 @@ Which can further be interpreted as:
 
 Values are seperated by either a colon (`:`), two colons (`::`), or a comma (`,`).
 
+### 3.3 Structured Data [`{}`]
+
+Structured Data uses a different format using curly brackets `{}`.
+
+A value can be assigned using the colon inside curly brackets. Prepended to the bracket is the X59Label and an Identifier Value.
+
+```
+[librustysigs/shulginsigning][!(structured)] example {
+
+public_key: <pk>;
+secret_key: <sk>;
+
+}
+```
+
+### 4.0 Splitting Data (`;`)
+
+A semicolon is used to end a data entry.
 
 
