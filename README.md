@@ -46,7 +46,8 @@ class X59Label:
 An `X59Source` is defined as the following:
 
 1. contains a `source_identifier` (`SID`)
-2. can contain additional information in regards to how it should be parsed
+2. contains a `source_application_id` (`SrcAppId`). This represents what data will be used with the source. 
+4. can contain additional information in regards to how it should be parsed
 
 ### 2.3 X59Type | (`#`)
 
